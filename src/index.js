@@ -6,16 +6,19 @@ import Table from './components/Class.js';
 import Context from './context'
 import TableFunc from './components/TableFunc'
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//       <Context>
-//         <TableFunc />
-//       </Context>
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
 
+//function component uchun buni commentdan oching
 ReactDOM.render(
-  <Table />,
+  <React.StrictMode>                 
+      <Context>
+        <TableFunc />
+      </Context>
+  </React.StrictMode>,
   document.getElementById('root')
 );
+
+//class component uchun buni commentdan oching
+// ReactDOM.render(
+//   <Table />,
+//   document.getElementById('root')
+// );
